@@ -16,7 +16,7 @@
     <div v-show="loadMore" class="more-container">
       <a href="#" @click.prevent="viewResults('MORE')">
         <span v-if="loading">Loading...</span>
-        <span v-else>Load more results</span>
+        <span v-else>Load more</span>
       </a>
     </div>
   </div>
@@ -104,7 +104,7 @@ export default {
 
 <style lang="scss" scoped>
 .query {
-  color: $color-primary;
+  color:black;
   font-weight: bold;
   font-style: italic;
   text-transform: lowercase;

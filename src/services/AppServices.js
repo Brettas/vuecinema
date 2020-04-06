@@ -1,7 +1,7 @@
 import { API, key } from '@/services/api';
 
 const language = 'en-US';
-const include_adult = 'false';
+const include_adult = false;
 
 export default {
   getConfiguration() {

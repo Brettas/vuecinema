@@ -1,28 +1,27 @@
 // Colors
 $color-primary: rgb(252, 252, 252);
 $color-secondary: rgb(252, 252, 252);
-$color-tags: rgb(28, 241, 99);
 $color-text-primary: white;
 $color-text-secondary:black;
 $color-menu:white;
 
-$background-primary: #000000;
-$background-secondary: rgb(0, 51, 255);
-$background-border:  #000000;
-$background-input:  #000000;
+$background-primary: black;
+$background-secondary: rgb(49, 82, 214);
+$background-border:  rgb(49, 82, 214);
+$background-input:white;
 
 // - Nav Bar
 $background-active: $color-primary;
-$background-active-gradient1:rgb(1, 237, 245);
-$background-active-gradient2: rgb(41, 26, 243);
+$background-active-gradient1:rgb(248, 240, 122);
+$background-active-gradient2: rgb(243, 167, 26);
 
 // - Poster
-$poster-shadow: rgba(0, 0, 0, 0.4);
+$poster-shadow: #5684e7;
 $poster-shadow-active: white;
 
 // - Modal
-$modal-color-shadow: rgba(0, 0, 0, 0.7);
-$modal-background: $background-secondary;
+$modal-color-shadow: rgb(252, 143, 1);
+$modal-background: rgba(0, 0, 0, 0.7);
 $modal-background-overlay: rgba(0, 0, 0, 0.85);
 
 // - Scrollbar

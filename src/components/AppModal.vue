@@ -38,10 +38,7 @@
             <h2 class="label">CAST</h2>
             <p>{{ itemInfo.cast }}</p>
 
-            <h2 class="label">Website</h2>
-            <p class="web" v-if="itemInfo.homepage != null">
-              <a :href="itemInfo.homepage">{{ itemInfo.homepage}}</a>
-            </p>
+            
           </section>
         </template>
         <template v-else>Loading ...</template>
@@ -118,16 +115,16 @@ li {
   padding: 4px;
   margin-right: 5px;
 
-  background-color: $color-tags;
-  color: $color-text-secondary;
-  font-size: 0.9em;
+  background-color: blue;
+  color: white;
+  font-size: 1em;
 }
 p {
   margin: 0;
   line-height: 1.4;
 }
 button {
-  color: $color-text-secondary;
+  color: white;
 }
 a {
   display: inline-block;
@@ -190,7 +187,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     background: $modal-background;
-    box-shadow: 0 1px 5px $modal-color-shadow;
+    box-shadow: 2px 2RRpx 3px 3px $modal-color-shadow;
     text-align: left;
     border-radius: 4px;
     width: 780px; /* This just a default width */
