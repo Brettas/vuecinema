@@ -16,12 +16,9 @@
             />
             <i>Vote Average</i>
           </aside>
-
           <section class="info">
             <h1>{{ itemInfo.title }}</h1>
-
             <p>{{ itemInfo.overview}}</p>
-
             <h2 class="label">
               <font-awesome-icon 
                 :icon="icon" 
@@ -29,19 +26,12 @@
                 class="icon" />&nbsp;
                 {{ dateLabel }}</h2>
             <p>{{ this.date }}</p>
-
             <h2 class="label">Genres</h2>
             <ul>
-              <li v-for="(g, index) in genres" :key="index">{{ g }}</li>
+            <li v-for="(g, index) in genres" :key="index">{{ g }}</li>
             </ul>
-
-            <h2 class="label">CAST</h2>
+            <h2 class="label">Cast</h2>
             <p>{{ itemInfo.cast }}</p>
-
-            <h2 class="label">Website</h2>
-            <p class="web" v-if="itemInfo.homepage != null">
-              <a :href="itemInfo.homepage">{{ itemInfo.homepage}}</a>
-            </p>
           </section>
         </template>
         <template v-else>Loading ...</template>
@@ -119,15 +109,15 @@ li {
   margin-right: 5px;
 
   background-color: $color-tags;
-  color: $color-text-secondary;
-  font-size: 0.9em;
+  color: white;
+  font-size: 1em;
 }
 p {
   margin: 0;
   line-height: 1.4;
 }
 button {
-  color: $color-text-secondary;
+  color: white;
 }
 a {
   display: inline-block;

@@ -7,9 +7,7 @@
         <a href="https://www.themoviedb.org/documentation/api">The Movie Data Base API</a>
       </li>
       <li>
-        <a href="https://github.com/Brettas/projetocinema">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
-        style="width:50px;height:50px;">GitHub Do Projeto</a>
+        <a href="https://github.com/Brettas/projetocinema">GitHub Do Projeto</a>
       </li>
       <li>
         &copy;By
@@ -22,7 +20,7 @@
 <style lang="scss" scoped>
 .footer {
   margin: 0 auto;
-  padding: 4em 0;
+  padding: 1em;
   text-align: center;
   font-size: 1em;
 }
@@ -40,7 +38,7 @@ a {
   color: white;
   &:hover {
     color: white;
-    background-color: $color-primary;
+    background-color: black;
     
   }
 }

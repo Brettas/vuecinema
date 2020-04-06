@@ -14,8 +14,7 @@ export default new Vuex.Store({
 
   },
   mutations: {
-    LOAD_CONF: (state, baseUrl) => {
-      state.baseUrl = baseUrl;
+    LOAD_CONF: (state, baseUrl) => {state.baseUrl = baseUrl;
     },
     RESET_ITEM: state => {
       Vue.set(state, 'itemInfo', {});
@@ -26,7 +25,6 @@ export default new Vuex.Store({
         title: type == 'movie' ? info.title : info.name,
         year: type == 'movie' ? info.release_date : info.first_air_date,
         overview: info.overview,
-        homepage: info.homepage,
         genres: info.genres,
         poster_path: info.poster_path,
         backdrop_path: info.backdrop_path,
@@ -37,7 +35,7 @@ export default new Vuex.Store({
           .join(', ')
       };
       Vue.set(state, 'itemInfo', itemInfo);
-    }
+    },
   },
   actions: {
     getInitialData: async ({ commit }) => {
