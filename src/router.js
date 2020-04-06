@@ -8,7 +8,7 @@ import TvShowsView from "@/views/TvShowsView";
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  //mode: 'history',
   base: process.env.NODE_ENV === "development" ? "/" : "/vue-movies/",
   routes: [
     {
@@ -31,7 +31,7 @@ export default new Router({
       component: MoviesView
     },
     {
-      path: "/tv",
+      path: "/tv-shows",
       name: "tv-shows",
       component: TvShowsView
     },

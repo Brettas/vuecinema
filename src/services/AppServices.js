@@ -1,14 +1,14 @@
 import { API, key } from '@/services/api';
 
 const language = 'en-US';
-
+const include_adult = 'false';
 
 export default {
   getConfiguration() {
     return API.get(`configuration?api_key=${key}`);
   },
   search(query, page) {
-    const url = `search/multi?api_key=${key}&language=${language}&query=${query}&page=${page}`;
+    const url = `search/multi?api_key=${key}&language=${language}&query=${query}&page=${page}&include_adult=${include_adult}`;
     return API.get(url);
   },
   getItemInfo(id, type) {

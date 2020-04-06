@@ -50,7 +50,7 @@ input {
   width: calc(100% - 95px);
   font-size: 1.5em;
   outline: 0;
-  color: black;
+  color: $color-primary;
   background-color: $background-input;
   border-radius: 3px;
 }

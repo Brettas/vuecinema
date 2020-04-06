@@ -3,7 +3,7 @@
     <div v-show="loadMore" class="more-container">
       <span v-if="loading">Loading...</span>
       <a href="#" @click.prevent="viewMoreData"  v-else>
-        <span>MORE MOVIES</span>
+        <span>Load more results</span>
       </a>
     </div>
   </div>
@@ -36,15 +36,15 @@
     width: 10em;
     outline: 0;
     color: $color-menu;
-    background-color: black;
-    font-size: 1em;
+    background-color: transparent;
+    font-size: 0.8em;
     font-family: "Ubuntu Mono", monospace;
     text-decoration: none;
     cursor: pointer;
 
     &:hover {
-      border-color: white;
-      color: white;
+      border-color: $color-text-secondary;
+      color: $color-text-secondary;
     }
   }
 }
